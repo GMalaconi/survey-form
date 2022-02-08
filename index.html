@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form FCC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="title-section">
+            <h1 id="title">FreeCoffeeCamp</h1>
+            <p id="description">Donate to FreeCodeCamp and get FREE Coffee.</p>
+        </section>
+        <section id="form-section">
+            <form id="survey-form">
+                <h3>Personal Info:</h3>
+                <label id="name-label">
+                    <input type="text" class="centered" id="name" placeholder="John/Jane Doe" required>
+                </label>
+                <label id="email-label">
+                    <input type="email" class="centered" id="email" placeholder="coffeedoe@email.com" required>
+                </label>
+                <label id="number-label">
+                    <input type="number" class="centered" id="number" placeholder="123-654-7089" min="10" max="10" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </label>
+                <label id="dropdown-label">
+                    <select id="dropdown" required>
+                        <option name="five" value="5">Donate 5&#36</option>
+                        <option name="ten" value="10">Donate 10&#36</option>
+                        <option name="twenty-five" value="25">Donate 25&#36</option>
+                    </select>
+                </label>
+                <label id="radio-btns">
+                    <h3>Gender:</h3>
+                    <label for="male"><input type="radio" id="male" name="gender" value="male">Male</label>
+                    <label for="female"><input type="radio" id="female" name="gender" value="female">Female</label>
+                    <label for="other"><input type="radio" id="other" name="gender" value="other">Other</label>
+                </label>
+                <label id="other">
+                    <textarea class="centered" placeholder="Other, please specify"></textarea>
+                </label>
+                <label id="terms-conditions">
+                    <h3>Terms &amp Conditions:</h3>
+                    <label for="really1"><input type="checkbox" id="not-real" name="not-real" value="not-real" required>I understand that this is NOT a real promotion.</label><br/>
+                    <label for="really2"><input type="checkbox" id="not-dumb" name="not-dumb" value="not-dumb" required>I am NOT going to fill this with real information.</label>
+                </label>
+                <button id="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

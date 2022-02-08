@@ -1,0 +1,96 @@
+body {
+    background: url("https://cdn.pixabay.com/photo/2013/08/11/19/46/coffee-171653_960_720.jpg");
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  main {
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  #title {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 6vw;
+  }
+  #description {
+    font-size: 3vw;
+  }
+  
+  @media only screen and (max-width: 280px) {
+    #title {
+      font-size: 100%;
+    }
+  }
+  
+  #description {
+    text-align: center;
+  }
+  
+  #survey-form {
+    width: 50%;
+    margin-top: 50px;
+    heigth: 100%;
+    margin-left: 24%;
+    animation-name: back-forth;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes back-forth {
+    0% {
+      margin-left: 4%;
+    }
+    50% {
+      margin-left: 44%;
+    }
+    100% {
+      margin-left: 24%;
+    }
+  }
+  
+  @media only screen and (max-width: 750px) {
+    #survey-form {
+      width: 96%;
+      margin-left: 0%;
+    }
+  }
+  
+  #survey-form .centered {
+    width: 98%;
+    border: 4px black solid;
+    border-radius: 5px;
+    padding: 2%;
+    margin-bottom: 15px;
+  }
+  
+  #dropdown {
+    padding: 10px;
+    width: 104%;
+    border: 4px black solid;
+    border-radius: 5px;
+  }
+  
+  #submit {
+    color: black;
+    font-size: 2vw;
+    text-transform: uppercase;
+    background-color: yellow;
+    border: none;
+    margin-top: 5%;
+    width: 104%;
+    padding: 5px;
+  }
+  
+  @media (max-width: 750px) {
+    #title {
+      font-size: 8vw;
+    }
+    
+    #description {
+      font-size: 6vw;
+    }
+    
+    #submit {
+      font-size: 4vw;
+    }
+  }
